@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Cocktail land</title>
+        <meta charset="utf-8" />
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+          <link href="https://fonts.googleapis.com/css?family=Courgette&display=swap" rel="stylesheet">
+          <link rel="stylesheet" href="cocktail.css">
+          <script src="cocktail.js"></script>
+    </head>
+    <body>
+            <div class="top-nav">
+                    <nav class="navbar sticky-top navbar-inverse navbar-expand">
+                        <div class="container-fluid">
+                          <div class="navbar-header">
+                            <a class="navbar-brand" href="#">Cocktails</a>
+                          </div>
+
+                          <ul class="nav navbar-nav navbar-right ">
+                                <li><a href="D:\Vanshika\Cocktail\signup_login_cocktail.html">Sign Up</a></li>
+                                <li><a href="D:\Vanshika\Cocktail\login_cocktail.html"> Login</a></li>
+                              </ul>
+                          <ul class="nav navbar-nav navbar-right">
+                            <li><a href="#">Home</a></li>
+                            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Cocktails<span class="caret"></span></a>
+                              <ul class="dropdown-menu">
+                                <li><a href="#">Margarita</a></li>
+                                <li><a href="#">BeerMargarita</a></li>
+                                <li><a href="#">Cosmopolitin</a></li>
+                                <li><a href="#">Negori</a></li>
+
+                            </ul>
+                            </li>
+                            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Ingredients<span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                  <li><a href="#">Rum</a></li>
+                                  <li><a href="#">Beer</a></li>
+                                  <li><a href="#">Whiskey</a></li>
+                                  <li><a href="#">Vodka</a></li>
+                                </ul>
+                              </li>
+                              <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Recepies<span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                  <li><a href="#">Beer Margarita</a></li>
+                                  <li><a href="#">Sidecar</a></li>
+                                  <li><a href="#">Bobbing Apple</a></li>
+                                </ul>
+                              </li>
+                          </ul>
+                          <!-- <form class="navbar-form navbar-right">
+                            <div class="form-group" id="searchForm">
+                              <input type="text" class="form-control" placeholder="Search" name="search" id="top-nav-search">
+                            </div>
+                            <button type="submit" class="btn btn-default" id="search-button">Search</button>
+                          </form> -->
+                        </div>
+                      </nav>
+             </div>
+<div class="container-fluid">
+  <div class="heading"><h1>Cocktailss</h1>
+</div>
+    <div class="heading-image">
+        <img src="b1.jpg" width="100%" height="80%">
+</div>
+</div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div class="cocktail" id="cocktails">
+    <div class="heading1">
+        <h1 style="font-family: 'Courgette', cursive;">Cocktails</h1>
+        <h2 style="font-family: 'Courgette', cursive;"> Classic Drinks </h2>
+    </div>
+</div>
+<div class="trending-cocktail">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3  align-self-center">
+                    <div class="card card-body">
+                        <div class="cocktail-picture">
+                           <a href="#panel"  onclick="onbeer()"><img src="a.jpg" width="250px" height="350px"></a>
+                        </div>
+                        <h2 class="trend-heading">Zam Beer</h2>
+                    </div>
+            </div>
+            <div class="col-md-3  align-self-center">
+                        <div class="card card-body">
+                            <div class="cocktail-picture">
+                       <a href="#panel" onclick="onmargarita()"><img src="margarita.jpg" width="250px" height="350px"></a>
+                            </div>
+                            <h2 class="trend-heading">Margarita</h2>
+                        </div>
+             </div>
+            <div class="col-md-3  align-self-center">
+                            <div class="card card-body">
+                                <div class="cocktail-picture">
+                                   <a href="#panel" onclick="onrum()"> <img src="cosmopolitin.jpg" width="250px" height="350px"></a>
+                                </div>
+                                <h2 class="trend-heading">Rum</h2>
+                            </div>
+            </div>
+            <div class="col-md-3  align-self-center">
+                    <div class="card card-body">
+                        <div class="cocktail-picture">
+                          <a href="#panel"  onclick="onwhiskey()">  <img src="negori.jpg" width="250px" height="350px"></a>
+                        </div>
+                        <h2 class="trend-heading">Whiskey</h2>
+                    </div>
+    </div>
+            </div>
+<br>
+<br>
+<hr>
+<div id="panel-cocktail">
+        <!-- <div class="container">
+            <div id="myObj1" class="row">
+        </div>
+        <br> -->
+</div>
+
+    <div class="search-button">
+        <h1 id="demo"></h1>
+        <button class="search" name="search" onclick="load()">Click for more</button>
+    </div>
+    <br>
+
+</div>
+<br>
+<hr>
+
+<div class="explore" id="explore">
+    <h1 class="divider heading1">
+        <span class="sans">Ingredients</span>
+    </h1>
+</div>
+<br><br>
+<div class="explore1">
+    <div class="container">
+    <div class="row">
+        <div class="col-sm-4">
+            <div class="feature-box md-md-1">
+            <img src="tequilla.jpg" width="250px" height="300px">
+            </div>
+            <h5 class="heading2">Vodka</h1>
+        </div>
+        <div class="col-sm-4">
+            <div class="feature-box md-md-1">
+            <img src="rum.jpg" width="250px" height="300px">
+            </div>
+            <h5 class="heading2">Rum</h1>
+        </div>
+        <div class="col-sm-4">
+            <div class="feature-box md-md-1">
+            <img src="everclear.jpg" width="250px" height="300px">
+            </div>
+            <h5 class="heading2">Whiskey</h1>
+        </div>
+    </div>
+    </div>
+    <br>
+    </div>
+</div>
+<div class="search-button">
+        <button class="search" name="search" onclick="load1()">Click for more</button>
+    </div>
+<br>
+<br>
+<br>
+<div id="panel-ingredient">
+</div>
+<br>
+
+<div class="heading1">
+    <h1 class="heading1">Cocktail Recepies</h1>
+</div>
+<br>
+
+
+<br>
+
+
+<div class="container-fluid">
+    <div class="Recepies" id="Recepies">
+        <div class="row">
+            <div class="col-md-4 col-sm-6 recepie-box">
+                <div class="feature-box md-md-1">
+                    <div class="recepie-picture"><a href="BeerMargarita.html"><img src="beerMargarita.jpg" width="200px" height="300px"></a>
+                </div>
+                <h5 class="heading2">Beer Margarita</h5>
+                <img src="star-rating.jpg" width="70px" height="30px">
+                <h4 style="font-family: 'Dancing Script', cursive;">By Anonymous</h4>
+                </div>
+            </div>
+                <div class="col-md-4 col-sm-6 recepie-box">
+                <div class="feature-box md-md-1">
+                        <div class="recepie-picture"><a href="#"><img src="pearBrandySidecar.jpg" width="200px" height="300px"></a></div>
+                </div>
+                <h5 class="heading2">Peer Brandy Sidecar</h5>
+                <img src="star-rating.jpg" width="70px" height="30px">
+                <h4 style="font-family: 'Dancing Script', cursive;">By Anonymous</h4>
+            </div>
+            <div class="col-md-4 col-sm-6 recepie-box">
+                    <div class="feature-box md-md-1">
+                            <div class="recepie-picture"><a href="#"><img src="BobbingApple.jpg" width="200px" height="300px"></a></div>
+                    </div>
+                    <h5 class="heading2">Bobbing Apple</h5>
+                    <img src="star-rating.jpg" width="70px" height="30px">
+                    <h4 style="font-family: 'Dancing Script', cursive;">By Anonymous</h4>
+                </div>
+        </div>
+    </div>
+</div>
+
+        <p class="heading2" id="recepieFinal"></p>
+        <br>
+        <br>
+        <hr>
+        <div class="Browse-drinks">
+         <h1 class="heading2">Browse Drinks</h1><br>
+         <h3><a id="browse-a" href="#" title="click for A" onclick="Abrowse();return false">A/</a><a  id="browse-b" href="#" title="click for A" onclick="Bbrowse();return false">B/</a><a href="#" title="click for A" onclick="Cbrowse();return false">C/</a><a href="#" title="click for D" onclick="Dbrowse();return false">D/</a><a href="#" title="click for E" onclick="Ebrowse();return false">E/</a><a href="#" title="click for F" onclick="Fbrowse();return false">F/</a><a href="#" title="click for A" onclick="Gbrowse();return false">G/</a><a href="#" title="click for A" onclick="Hbrowse();return false">H/</a><a href="#" title="click for A" onclick="Ibrowse();return false">I/</a><a href="#" title="click for A" onclick="Jbrowse();return false">J/</a><a href="#" title="click for A" onclick="Kbrowse();return false">K/</a><a href="#" title="click for A" onclick="Lbrowse();return false">L/</a><a href="#" title="click for A" onclick="Mbrowse();return false">M/</a><a href="#" title="click for A" onclick="Nbrowse();return false">N/</a><a href="#" title="click for A" onclick="Obrowse();return false">O/</a><a href="#" title="click for A" onclick="Pbrowse();return false">P/</a><a href="#" title="click for A" onclick="Qbrowse();return false">Q/</a><a href="#" title="click for A" onclick="Rbrowse();return false">R/</a><a href="#" title="click for A" onclick="Sbrowse();return false">S/</a><a href="#" title="click for A" onclick="Tbrowse();return false">T/</a><a href="#" title="click for A" onclick="Ubrowse();return false">U/</a><a href="#" title="click for A" onclick="Vbrowse();return false">V/</a><a href="#" title="click for A" onclick="Wbrowse();return false">W/</a><a href="#" title="click for A" onclick="Xbrowse();return false">X/</a><a href="#" title="click for A" onclick="Ybrowse();return false">Y/</a><a href="#" title="click for A" onclick="browse();return false">Z</a></h3>
+        <h3 id="A_drinks"></h3>
+        </div>
+        <hr>
+
+        <div class="name-cocktail">
+
+        </div>
+<br>
+<br>
+<h1 class="heading1">Gallery</h1>
+<div class="trending" id="gallery">
+    <div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-4 ">
+               <a href="1.jpg"> <img src="1.jpg" ></a>
+        </div>
+        <div class="col-sm-4 ">
+                <a href="2.jpg"> <img src="2.jpg" ></a>
+            </div>
+            <div class="col-sm-4">
+                    <a href="4.jpg"> <img src="4.jpg" ></a>
+                </div>
+
+    </div>
+    <div class="row">
+            <div class="col-sm-4">
+                    <a href="5.jpg"> <img src="5.jpg" ></a>
+                </div>
+                <div class="col-sm-4">
+                        <a href="6.jpg"> <img src="6.jpg" ></a>
+                    </div>
+                    <div class="col-sm-4">
+                            <a href="6.jpeg"> <img src="6.jpeg" ></a>
+                        </div>
+    </div>
+
+</div>
+</div>
+<footer class="footer">
+<div class="footer-main">
+    <div class="footer-main__menu">
+        <div class="row large-unstack">
+            <div class="column large-9 small-12">
+                <div class="row large-unstack text-center medium-text-center">
+                    <div class="column">
+                        <div class="row row1 medium-unstack">
+                            <div class="column">
+                                <h6 class="heading2">About me</h6>
+                                <ul class="menu verticle">
+                                    <li>Developer</li>
+                                    <li>Student at Chitkara University</li>
+                                    <li>3rd Year</li>
+                                    <li>Bachelor of Technology</li>
+                                </ul>
+                            </div>
+                            <div class="column">
+                                <h6 class="heading2">Contact me</h6>
+                                <ul class="menu verticle">
+                                    <li>Phone No. 7014004435</li>
+                                    <li>Address- Chitkara University,Punjab</li>
+                                    <li>Email- vanshikamatta18@gmail.com</li>
+                                </ul>
+                            </div>
+                            <div class="column">
+                                <h6 class="heading2">Follow me on</h6>
+                                <ul class="menu horizontal">
+                                    <li>facebook</li>
+                                    <li>Instagram</li>
+                                    <li>Linkedin</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+</div>
+
+    </body>
+</html>
